@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: laravel
+  name: laravel
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: laravel
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: laravel
+    spec:
+      imagePullSecrets:
+        - name: registry-secret
+      containers:
+      - image: 105635814729.dkr.ecr.us-east-1.amazonaws.com/rq-laravel-test-hz:BUILD_NUMBER
+        name: laravel-beckend
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+        resources: {}
+status: {}

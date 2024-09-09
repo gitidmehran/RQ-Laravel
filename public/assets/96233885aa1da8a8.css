@@ -1,0 +1,46 @@
+.PlayRadioButton_container___GD_P {
+	position: absolute;
+	inset-block-start: 0;
+	inset-inline: 0;
+	display: flex;
+	justify-content: flex-end;
+	box-sizing: border-box;
+	padding-inline: calc(1.3*var(--spacing-medium));
+	padding-block: var(--spacing-medium)
+}
+
+@media only screen and (min-width:768px) {
+	.PlayRadioButton_container___GD_P {
+		padding-inline: calc(1.3*var(--spacing-mega))
+	}
+}
+
+.PlayRadioButton_playRadioSection__0qUwH {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end
+}
+
+.PlayRadioButton_stationTitle__QI0ui {
+	-webkit-margin-before: var(--spacing-medium);
+	margin-block-start: var(--spacing-medium);
+	color: #fff
+}
+
+.PlayRadioButton_editStationButton__Esi_Y {
+	-webkit-margin-end: var(--spacing-xsmall);
+	margin-inline-end: var(--spacing-xsmall);
+	color: #fff;
+	text-decoration: underline
+}
+
+.PlayRadioButton_playPauseButton__sHEjM {
+	background-color: transparent;
+	border: none;
+	color: #fff
+}
+
+.PlayRadioButton_playPauseButton__sHEjM:hover {
+	color: #fff;
+	background-color: rgba(0, 0, 0, .3)
+}
